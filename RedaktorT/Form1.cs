@@ -1,13 +1,14 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RedaktorT
 {
@@ -41,11 +42,7 @@ namespace RedaktorT
             MessageBox.Show("ФАЙЛ ОТКРЫТ");
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void копироватьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (richTextBox1.TextLength > 0) // оператор, если введен текст
