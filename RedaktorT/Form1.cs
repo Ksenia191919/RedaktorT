@@ -23,7 +23,7 @@ namespace RedaktorT
 
 
 
-        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e)
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;// отмена сохранения файла, возврат к программе
@@ -164,6 +164,11 @@ namespace RedaktorT
         {
             AboutRedaktor aboutRedaktor = new AboutRedaktor();
             aboutRedaktor.Show();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
